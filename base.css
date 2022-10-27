@@ -1,0 +1,36 @@
+:root{
+    --bs-green: rgb(25, 135, 84);
+    --gris: rgb(51, 58, 64);
+    --verde-pie: rgb(28, 68, 90);
+    --celeste: rgb(204, 229, 255);
+    --azuloscuro: rgb(11, 53, 96);
+    --verde: rgb(151, 201, 62);
+    --white: rgb(255, 255, 255);
+  }
+  .boton{
+    background-color: var(--verde) !important;
+    color: var(--white) !important;
+  }
+  .colorverde{
+      color: var(--bs-green) !important;
+  }
+  .colorgris{
+      background-color: var(--gris);
+  }
+  .verdeoscuro{
+    background-color: var(--verde-pie);
+    align-content: center !important;
+  }
+  .totalpagar{
+    background-color: var(--celeste) !important;
+    color: var(--azuloscuro) !important;
+  }
+  .flex1{
+    width: 12em;
+    height: 5em;
+    margin: 0;
+    padding: 0;
+  }
+  .ws{
+    width: 60%!important;
+  }

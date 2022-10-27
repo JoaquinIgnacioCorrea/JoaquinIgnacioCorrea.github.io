@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo práctico integrador JS</title>
+    <link rel="stylesheet" href="./index.css/base.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg colorgris navbar-dark container-fluid py-0">
+          <div class="container-fluid">
+            <nav class="navbar navbar-dark d-flex flex1 mx-2">
+              <a class="container-fluid navbar-brand d-flex m-0 py-0 px-3 justify-content-center" href="#">
+                <div class="container-fluid d-flex justify-content-center">
+                  <img src="/Codo a codo/Fotos/codoacodo.png" alt="Logo" class="d-inline img-fluid" width="300" height="300">
+                  <p class="d-inline text-capitalize m-0 py-4">confs bs as</p>
+                </div>
+              </a>
+            </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Conviertete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link colorverde" href="#">Comprar tickets</a>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="">
+            <div class="row justify-content-center text-center ws mx-auto mt-5 mb-3">
+                <div class="col border border-primary mx-2 p-0 pb-3 col-md-4">
+                    <h3 class="p-4 mt-2 mb-0">Estudiante</h3>
+                    <p class=""><span class="fs-5">Tienen un descuento</span></br> <span class="fw-bold">80%</span> </br> <span class="fs-6 text-muted">*presentar documentación</span></p>
+                </div>
+                <div class="col border border-info mx-2 p-0 pb-3">
+                    <h3 class="p-4 mt-2 mb-0">Trainee</h3>
+                    <p class=""><span class="fs-5">Tienen un descuento</span></br> <span class="fw-bold">50%</span> </br> <span class="fs-6 text-muted">*presentar documentación</span></p>
+                </div>
+                <div class="col border border-warning mx-2 p-0 pb-3">
+                    <h3 class="p-4 mt-2 mb-0">Junior</h3>
+                    <p class=""><span class="fs-5">Tienen un descuento</span></br> <span class="fw-bold">15%</span> </br> <span class="fs-6 text-muted">*presentar documentación</span></p>
+                </div>
+            </div>
+            <div class="">
+                <div class="row m-2 mb-0">
+                    <div class="text-center">
+                        <p class="mb-0 fs-6 text-uppercase">venta</p>
+                        <h2 class="text-uppercase">valor de ticket $200</h2>
+                    </div>
+                <div class="row text-center justify-content-center w-50 mx-auto">
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3 col-md-12">
+                      <input type="text" class="form-control" placeholder="Correo">
+                    </div>
+                  </div>
+            </div>
+            <div class="m-2 mt-0">
+              <div class="row w-50 mx-auto">
+                <div class="mb-1 col-md-6 ps-4">
+                  <p class="form-label text-left">Cantidad</p>
+                </div>
+                <div class="mb-1 col-md-6 pe-4">
+                  <p class="form-label text-left">Categoria</p>
+                </div>
+              </div>
+              <div class="row justify-content-center w-50 mx-auto">
+                <div class="mb-3 col-md-6 ps-4">
+                  <input type="text" class="form-control" placeholder="Cantidad" id="cantidad" placeholder="cantidad" name="cantidad">
+                </div>
+                <div class="mb-3 col-md-6 pe-4">
+                    <select  class="form-select" id="categoria">
+                      <option value="Estudiante" >Estudiante</option>
+                      <option value="Trainee">Trainee</option>
+                      <option value="Junior">Junior</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-md-12 px-4">
+                  <div class="form-control totalpagar" type="text" name="resultado"><em id="resultado">Total a Pagar: $</em></div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center ws mx-auto">
+              <div>
+                <button type="button" class="btn boton m-1 col-md-5" id="boton1-form2" onclick="borrar()">Borrar</button>
+                <button class="btn boton m-1 col-md-5" id="boton2-form2" onclick="resultadoprecio();">Resumen</button>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid verdeoscuro text-white pt-4">
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Preguntas frecuentes</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Contáctanos</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Prensa</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Conferencias</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Términos y condiciones</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Privacidad</a>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <a href="#" class="navbar-brand">Estudiantes</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="/Trabajo práctico integrador JS/tp.js/tp.js"></script>
+</body>
+</html>
