@@ -1,0 +1,476 @@
+:root {
+  --cprimario: rgb(107, 176, 255);
+  --cprimario1: rgba(130, 176, 255);
+  --cprimario2: rgb(144, 184, 252, .7);
+  --cprimario3: rgba(156, 191, 252, 0.7);
+  --csecundario: rgb(94, 94, 94);
+  --csecundario1: rgb(94, 94, 94, .7);
+  --csecundario2: rgba(151, 151, 151, .7);
+  --csecundario3: rgba(171, 171, 171, .7);
+  --cterceario: rgb(240, 240, 240);
+}
+
+/*Etiquetas*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--cterceario);
+}
+
+ul a:hover {
+  background-color: var(--cprimario1);
+}
+
+/*Clases*/
+.contenedorinfo {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.nowarp {
+  flex-wrap: nowrap;
+}
+
+.none {
+  display: none;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.contenedorcenter {
+  justify-content: center;
+}
+
+.linkcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grow {
+  flex-grow: 2.22;
+}
+
+.boton {
+  border-radius: 10%;
+}
+
+.imgperfil {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--cterceario);
+  width: 5em;
+}
+
+.tittleh1 {
+  font-size: 100%;
+  margin: .8em 0 .25em .2em;
+}
+
+.info {
+  color: var(--cterceario);
+  background-color: var(--csecundario1);
+  border-radius: 1.5em;
+  padding: .5em;
+  height: 4.5em;
+  width: 75%;
+  margin: 1em auto;
+}
+
+.margintextinfo {
+  margin: 1em 0;
+}
+
+.linkcontactnav {
+  background-color: var(--csecundario2);
+  border-radius: 10px;
+  margin: .2em;
+  padding: .3em;
+}
+
+.contenedor4 {
+  justify-content: center;
+}
+
+.contenedor5 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.margintextexp {
+  margin: 1em;
+  font-size: .9em;
+}
+
+.margintittle {
+  margin: 1em;
+}
+
+.margintextskills {
+  margin: 1em 0;
+}
+
+.linkcontentnav {
+  padding: .5em 40%;
+}
+
+
+.linkcontentfoot {
+  padding: 1em 3em;
+}
+
+.linkfoot1 {
+  padding: 1em .5em;
+}
+
+.campo {
+  border-radius: 5px;
+  max-width: 70%;
+  margin: .5em auto;
+}
+
+.labelcampo {
+  margin: .4em auto 0 auto;
+}
+
+.mostrar{
+  margin-left: 0 !important;
+}
+
+.mostrarcontacto{
+  display: block !important;
+}
+
+#infopersonal, #experiencia, #habilidades{
+  scroll-margin-top: 6em;
+}
+
+#contacto{
+  display: none;
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 729px) {
+  
+  .margincontact {
+    margin: .5em 0;
+  }
+
+  .boton1 {
+    padding: 0 1em;
+  }
+
+  #infopersonal, #experiencia, #habilidades{
+    scroll-margin-top: 7em;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 15.7%;
+    margin-left: -500%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cprimario2);
+    padding-bottom: .5em;
+    transition: all .8s;
+    border-bottom: 0.25em solid var(--cterceario);
+  }
+
+  .tittleh1 {
+    margin: 1.5em 0 .5em .2em;
+  }
+
+  .navtittle {
+    width: 80%;
+  }
+
+  .divmenu {
+    width: auto;
+  }
+
+  li a.linkcontentnav:hover,
+  a.linkcontactnav:hover {
+    background-color: var(--cprimario3) !important;
+  }
+
+  .linkcontactnav {
+    background-color: transparent;
+    border-radius: none;
+    padding: .5em 40%;
+  }
+  
+}
+
+a.linkcontactnav:hover {
+  background-color: var(--csecundario3);
+}
+
+.navbar {
+  background-color: var(--cprimario);
+  max-height: 5em;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.25em solid var(--cterceario);
+  margin-bottom: .5em;
+}
+
+.infopersonal,
+.experiencia {
+  border-bottom: 0.25em solid var(--cprimario);
+  margin: 0 .5em;
+}
+
+.item {
+  height: 2.2em;
+  color: var(--cterceario);
+  padding: 1.2em .5em 0;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 730px) {
+  .item {
+    color: var(--cterceario);
+    display: none !important;
+  }
+}
+
+.footer {
+  background-color: var(--cprimario);
+  color: var(--cterceario);
+  display: flex;
+  flex-direction: column;
+  border-top: 0.25em solid var(--cterceario);
+}
+
+/*Tamaño 768 a 1366*/
+@media only screen and (min-width: 730px) and (max-width: 1365px) {
+  .imgperfil {
+    width: 6.5em;
+  }
+
+  .info {
+    padding: .5em;
+    height: 5em;
+    min-width: 13em;
+    max-width: 13em;
+    margin: .7em;
+  }
+
+  .margintextinfo {
+    margin: 1.2em 0;
+  }
+
+  .margintextexp {
+    margin: 2em 15%;
+  }
+
+  .margintittle {
+    margin: 1em 0 .5em 0;
+  }
+
+  .margintextskills {
+    margin: 10% 0;
+  }
+
+  .linkcontentnav {
+    justify-content: center;
+    padding: 2.5em .5em;
+    font-size: .8em;
+  }
+
+  .linknav1 {
+    padding: 2em .5em;
+  }
+
+  .linkcontactnav {
+    font-size: .8em;
+    margin: 1em .5em;
+    padding: .5em 1em;
+  }
+
+  .divtittleh1 {
+    max-height: 5em;
+  }
+
+  .tittleh1 {
+    font-size: 1.5em;
+    margin: .8em 0 .25em .2em;
+  }
+
+  .linkcontentfoot {
+    padding: 2em 3.5em;
+  }
+
+  .linkfoot1 {
+    padding: 1.4em 3.5em;
+  }
+
+  .campo {
+    border-radius: 5px;
+    max-width: 50em;
+    margin: 0 35% 0.5em;
+  }
+
+  .labelcampo {
+    margin: 1em 0 0.25em 0;
+  }
+
+  .contenedor2,
+  .contenedor3 {
+    margin: 2em 0;
+    justify-content: center;
+  }
+
+  .contenedor4 {
+    min-height: 1em;
+  }
+
+  .contenedor5 {
+    flex-direction: row;
+    max-height: 5.2em;
+    min-width: 50%;
+  }
+
+  .navbar {
+    margin-bottom: 2em;
+  }
+
+  .boton1 {
+    margin: 1em 38%;
+  }
+
+  .contenedorinfo {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (min-width: 917px) and (max-width: 1365px) {
+  .linknav1 {
+    padding: 2.5em .5em;
+  }
+
+  .linkfoot1 {
+    padding: 2em 3.5em;
+  }
+
+  .tittleh1 {
+    font-size: 1.5em;
+    margin: 1.2em 0 .9em .2em;
+  }
+}
+
+/*Tamaño 1366*/
+
+@media only screen and (min-width: 1366px) {
+  .info {
+    padding: .5em;
+    width: 90%;
+    height: 5em;
+    margin: 1em;
+  }
+
+  .imgperfil {
+    width: 8em;
+  }
+
+  .margintextinfo {
+    margin: 5% 0;
+  }
+
+  .margintextexp {
+    margin: 2em 15%;
+    font-size: 1.2em;
+  }
+
+  .margintittle {
+    margin: 1.5em 0 1em 0;
+  }
+
+  .margintextskills {
+    margin: 8% 0;
+  }
+
+  .linkcontentnav {
+    padding: 1.89em 1em;
+  }
+
+  .linkcontactnav {
+    margin: 1.5em .5em;
+    padding: .5em 1em;
+  }
+
+  .linkcontentfoot {
+    padding: 1.89em 3.5em;
+  }
+
+  .campo {
+    border-radius: 5px;
+    max-width: 50em;
+    margin: 0 38% 0.5em;
+  }
+
+  .labelcampo {
+    margin: 1em 0 0.25em 0;
+  }
+
+  .contenedor2,
+  .contenedor3 {
+    margin: 2em 0;
+  }
+
+  .contenedor4 {
+    margin: 0 15%;
+    min-height: 1em;
+  }
+
+  .contenedor5 {
+    flex-direction: row;
+    min-height: 5em;
+    min-width: 50%;
+  }
+
+  .navbar {
+    min-height: 5em;
+    margin-bottom: 2em;
+  }
+
+  .boton1 {
+    margin: 1em 38%;
+  }
+
+  .contenedorinfo {
+    grid-template-columns: auto auto auto;
+  }
+
+  .tittleh1 {
+    font-size: 2em;
+    margin: .8em 0 .25em .2em;
+  }
+}
